@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>crud</h2>
+        <p>welcome to our project</p>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="total">
+                <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+                <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
+                <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+                <small id="total">total</small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="create">create</button>
+            <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search">
+            <div class="search">
+                <button  onclick="getSearchMood(this.id)" id="title-searchy">search by title</button>
+                <button onclick="getSearchMood(this.id)" id="category-searchy">search by category</button>
+            </div>
+            <div id="btnDelete"></div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>count</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
